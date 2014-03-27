@@ -1,7 +1,7 @@
-refactor_recipe_app
+Recipe App, for refactoring (refactor_recipe_app)
 ===================
 
-Setting this repository up for a rails app refactoring workshop to be done at a future CleRb meetup
+For a rails app refactoring workshop to be done at a future CleRb meetup
 
 
 Setup Environment
@@ -26,5 +26,5 @@ bundle exec rake db:migrate
 Initialize database:
 
 ```shell
-bundle exec rake db:migrate
+bundle exec rake db:seed
 ```
