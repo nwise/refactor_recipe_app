@@ -5,7 +5,7 @@
 <h2>Meal Recipes</h2>
 
 <div id="accordion" class="recipes">
-  <h3>Level 1: Beginner Meals for One</h3>
+  <h3>Level 1: Kid Chef Meals</h3>
   <div>
     <table>
       <tr>
@@ -13,7 +13,7 @@
         <% if recipe.level == 1 %>
             <td class="recipes <%= cycle('list_line_odd', 'list_line_even') %>">
               <d1>
-                <dt><strong>Recipe: </strong><%= recipe.title %></dt>
+                <dt><strong>Recipe: </strong><%= link_to recipe.title, edit_recipe_path(recipe) %></dt>
                 <dd><strong>Equip: </strong><%= recipe.resources %></dd>
                 <dd><strong>Servings: </strong><%= recipe.servings %></dd>
                 <dd><strong>Ingredients: </strng><%= recipe.ingredients %></dd>
@@ -25,7 +25,7 @@
       </tr>
     </table>
   </div>
-  <h3>Level 2: Beginner Meals for Two</h3>
+  <h3>Level 2: Beginner Meals</h3>
   <div>
     <table>
       <tr>
