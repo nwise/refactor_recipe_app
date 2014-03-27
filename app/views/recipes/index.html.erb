@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<h2>Meal Recipes</h2>
+
+<div id="accordion" class="recipes">
+  <h3>Level 1: Beginner Meals for One</h3>
+  <div>
+    <table>
+      <tr>
+      <% @recipes.each do |recipe| %>
+        <% if recipe.level == 1 %>
+            <td class="recipes <%= cycle('list_line_odd', 'list_line_even') %>">
+              <d1>
+                <dt><strong>Recipe: </strong><%= recipe.title %></dt>
+                <dd><strong>Equip: </strong><%= recipe.resources %></dd>
+                <dd><strong>Servings: </strong><%= recipe.servings %></dd>
+                <dd><strong>Ingredients: </strng><%= recipe.ingredients %></dd>
+                <dd><strong>Category: </strong><%= recipe.category %></dd>
+              </d1>
+            </td>
+        <% end %>
+      <% end %>
+      </tr>
+    </table>
+  </div>
+  <h3>Level 2: Beginner Meals for Two</h3>
+  <div>
+    <table>
+      <tr>
+        <% @recipes.each do |recipe| %>
+            <% if recipe.level == 2 %>
+                <td class="recipes, <%= cycle('list_line_odd', 'list_line_even') %>">
+                  <d1>
+                    <dt><strong>Recipe: </strong><%= recipe.title %></dt>
+                    <dd><strong>Level: </strong><%= recipe.level %></dd>
+                    <dd><strong>Resources: </strong><%= recipe.resources %></dd>
+                    <dd><strong>Crafted Materials: </strong><%= recipe.servings %></dd>
+                    <dd><strong>Components: </strong><%= recipe.ingredients %></dd>
+                    <dd><strong>Guilds: </strong><%= recipe.category %></dd>
+                  </d1>
+                </td>
+            <% end %>
+        <% end %>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<br>
+
+<script>
+  $(function() {
+    $( "#accordion" ).accordion();
+  });
+</script>

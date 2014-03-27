@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  level: 1
+  resources: MyString
+  ingredients: MyString
+  servings: MyString
+  category: MyString
+
+two:
+  title: MyString
+  level: 1
+  resources: MyString
+  ingredients: MyString
+  servings: MyString
+  category: MyString
