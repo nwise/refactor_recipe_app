@@ -26,7 +26,7 @@ bundle exec rake db:migrate
 Initialize database:
 
 ```shell
-bundle exec rake db:seed
+bundle exec rake db:setup
 ```
 
 
