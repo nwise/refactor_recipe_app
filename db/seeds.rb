@@ -24,9 +24,9 @@ Recipe.create(title: 'Hot Dogs', level: 2, category: 'meat', resources: 'pot', i
 Recipe.create(title: 'Apples with Caramel', level: 2, category: 'dessert', resources: 'knife', ingredients: 'apples caramel', servings: 5)
 
 Recipe.create(title: 'Trail mix', level: 3, category: 'snack', resources: 'none', ingredients: 'rasins oats chocolate_chips bannana_chips', servings: 2)
-Recipe.create(title: 'Salad', level: 3, category: 'vegetarian', resources: 'bowl cutting_board cullender knife', 'lettuce spinach tomatoes strawberries sun-flower_seeds', servings: 6)
+Recipe.create(title: 'Salad', level: 3, category: 'vegetarian', resources: 'bowl cutting_board cullender knife', ingredients: 'lettuce spinach tomatoes strawberries sun-flower_seeds', servings: 6)
 Recipe.create(title: 'Meatloaf', level: 3, category: 'meat', resources: 'pan bowl cuttng board knife', ingredients: 'ground_meat eggs bread_crumbs onion', servings: 6)
-Recipe.create(title: 'Bannana split', level: 3, category: 'dessert', resources: 'bowl scoop', ingredients: 'vanilla_ice_cream chocolate_ice_cream strawberry_ice_cream cherries strawberries whip_cream chocolate_syrup' servings: 2)
+Recipe.create(title: 'Bannana split', level: 3, category: 'dessert', resources: 'bowl scoop', ingredients: 'vanilla_ice_cream chocolate_ice_cream strawberry_ice_cream cherries strawberries whip_cream chocolate_syrup', servings: 2)
 
 Recipe.create(title: 'Fried vegetables', level: 4, category: 'snack', resources: 'deep_fryer cutting_board knife', ingredients: 'egg corn_starch cauliflower mushrooms zucchini onion broccoli', servings: 2)
 Recipe.create(title: 'Broccoli and cheese casserole', level: 4, category: 'vegetarian', resources: 'baking_dish knife pot strainer', ingredients: 'rice broccoli cheese corn_flake_crumbs cream_of_mushroom_soup', servings: 6)
